@@ -1,0 +1,53 @@
+
+  .imagen {
+    grid-area: imagen;
+    max-width: 100%; 
+    height: auto;
+    padding-top: 3%;
+  }
+
+.card_gen {
+    padding: 12%;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .card1 {
+  @extend .card_gen;
+    grid-area: card1; 
+  }
+  .card2 {
+    @extend .card_gen;
+    grid-area: card2;
+  }
+  .card3 {
+    @extend .card_gen;
+    grid-area: card3;
+  }
+  .card4 {
+    @extend .card_gen;
+    grid-area: card4;
+  }
+  .card5 {
+    @extend .card_gen;
+      grid-area: card5; 
+    }
+  .card6 {
+    @extend .card_gen;
+    grid-area: card6;
+    }
+  .card7 {
+    @extend .card_gen;
+    grid-area: card7;
+    }
+  .card8 {
+    @extend .card_gen;
+    grid-area: card8;
+    }
+  .scale:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 1s ease;
+  }
+
+  
