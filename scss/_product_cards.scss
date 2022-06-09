@@ -1,46 +1,23 @@
 
-   .card {
-    width: 25%;
-    padding: 20px 10px;
-    border: 1px solid grey;
-    border-radius: 20px;
+  .card {
+   // width: 25%;
+    padding: 10px 10px;
+    margin-bottom: 50px;
+   /* border: 1px solid grey;
+    border-radius: 20px;*/
 }
- 
 
-.card2 {
-  width: 25%;
-  padding: 20px 10px;
-  border: 1px solid grey;
-  border-radius: 20px;
-}
-/*.cardImg {
-    width: 100%;
+.cardImg {
+  width: 130%;
 }
 
 .cardPrice {
-    display: block;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 10px;
+  display: block;
+  font-size: 1000px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
-
-.buttonCTA {
-    margin: 10px 0;
-    background-color: rgb(216, 77, 77);
-    color: rgb(247, 247, 247);
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.buttonCTA:hover {
-    background-color: rgb(184, 64, 64);
-    box-shadow: 1px 1px 10px lightgrey;
-}
- /* 
+ 
 .card_gen {
     padding: 12%;
     width: 100%;
@@ -48,6 +25,7 @@
       width: 100%;
     }
   }
+ /*-----------------------------------------------------------------------------------------------------------------------------*/
   .card1 {
   @extend .card_gen;
     grid-area: card1; 
@@ -85,4 +63,4 @@
     transition: all 1s ease;
   }
 
-  */
+  

@@ -27,8 +27,8 @@ ul li a:hover {
   grid-area: headerHome;
 }*/
 footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
   background-color: black;
   grid-area: pie; }
   footer ul {
@@ -121,90 +121,55 @@ form {
   width: 100%; }
 
 .card {
-  width: 25%;
-  padding: 20px 10px;
-  border: 1px solid grey;
-  border-radius: 20px; }
+  padding: 10px 10px;
+  margin-bottom: 50px;
+  /* border: 1px solid grey;
+    border-radius: 20px;*/ }
 
-.card2 {
-  width: 25%;
-  padding: 20px 10px;
-  border: 1px solid grey;
-  border-radius: 20px; }
-
-/*.cardImg {
-    width: 100%;
-}
+.cardImg {
+  width: 130%; }
 
 .cardPrice {
-    display: block;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
+  display: block;
+  font-size: 1000px;
+  font-weight: 600;
+  margin-bottom: 10px; }
 
-.buttonCTA {
-    margin: 10px 0;
-    background-color: rgb(216, 77, 77);
-    color: rgb(247, 247, 247);
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
+.card_gen, .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+  padding: 12%;
+  width: 100%; }
+  .card_gen img, .card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img, .card7 img, .card8 img {
+    width: 100%; }
 
-.buttonCTA:hover {
-    background-color: rgb(184, 64, 64);
-    box-shadow: 1px 1px 10px lightgrey;
-}
- /* 
-.card_gen {
-    padding: 12%;
-    width: 100%;
-    img {
-      width: 100%;
-    }
-  }
-  .card1 {
-  @extend .card_gen;
-    grid-area: card1; 
-  }
-  .card2 {
-    @extend .card_gen;
-    grid-area: card2;
-  }
-  .card3 {
-    @extend .card_gen;
-    grid-area: card3;
-  }
-  .card4 {
-    @extend .card_gen;
-    grid-area: card4;
-  }
-  .card5 {
-    @extend .card_gen;
-      grid-area: card5; 
-    }
-  .card6 {
-    @extend .card_gen;
-    grid-area: card6;
-    }
-  .card7 {
-    @extend .card_gen;
-    grid-area: card7;
-    }
-  .card8 {
-    @extend .card_gen;
-    grid-area: card8;
-    }
-  .scale:hover {
-    transform: scale(1.1, 1.1);
-    transition: all 1s ease;
-  }
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+.card1 {
+  grid-area: card1; }
 
-  */
+.card2 {
+  grid-area: card2; }
+
+.card3 {
+  grid-area: card3; }
+
+.card4 {
+  grid-area: card4; }
+
+.card5 {
+  grid-area: card5; }
+
+.card6 {
+  grid-area: card6; }
+
+.card7 {
+  grid-area: card7; }
+
+.card8 {
+  grid-area: card8; }
+
+.scale:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 1s ease; }
+
 @media screen and (max-width: 768px) {
   .contenedor {
     grid-template-columns: repeat 2, 1fr;
@@ -301,7 +266,8 @@ h2 {
   display: flex;
   grid-area: destacados;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 3%; }
 
 .sectionText {
   text-align: justify;
@@ -329,93 +295,59 @@ h2 {
   display: flex;
   grid-area: lili;
   justify-content: space-around;
+  flex-flow: row wrap;
   width: 100%; }
 
 .card {
-  width: 25%;
-  padding: 20px 10px;
-  border: 1px solid grey;
-  border-radius: 20px; }
+  padding: 10px 10px;
+  margin-bottom: 50px;
+  /* border: 1px solid grey;
+    border-radius: 20px;*/ }
 
-.card2 {
-  width: 25%;
-  padding: 20px 10px;
-  border: 1px solid grey;
-  border-radius: 20px; }
-
-/*.cardImg {
-    width: 100%;
-}
+.cardImg {
+  width: 130%; }
 
 .cardPrice {
-    display: block;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
+  display: block;
+  font-size: 1000px;
+  font-weight: 600;
+  margin-bottom: 10px; }
 
-.buttonCTA {
-    margin: 10px 0;
-    background-color: rgb(216, 77, 77);
-    color: rgb(247, 247, 247);
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
+.card_gen, .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+  padding: 12%;
+  width: 100%; }
+  .card_gen img, .card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img, .card7 img, .card8 img {
+    width: 100%; }
 
-.buttonCTA:hover {
-    background-color: rgb(184, 64, 64);
-    box-shadow: 1px 1px 10px lightgrey;
-}
- /* 
-.card_gen {
-    padding: 12%;
-    width: 100%;
-    img {
-      width: 100%;
-    }
-  }
-  .card1 {
-  @extend .card_gen;
-    grid-area: card1; 
-  }
-  .card2 {
-    @extend .card_gen;
-    grid-area: card2;
-  }
-  .card3 {
-    @extend .card_gen;
-    grid-area: card3;
-  }
-  .card4 {
-    @extend .card_gen;
-    grid-area: card4;
-  }
-  .card5 {
-    @extend .card_gen;
-      grid-area: card5; 
-    }
-  .card6 {
-    @extend .card_gen;
-    grid-area: card6;
-    }
-  .card7 {
-    @extend .card_gen;
-    grid-area: card7;
-    }
-  .card8 {
-    @extend .card_gen;
-    grid-area: card8;
-    }
-  .scale:hover {
-    transform: scale(1.1, 1.1);
-    transition: all 1s ease;
-  }
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+.card1 {
+  grid-area: card1; }
 
-  */
+.card2 {
+  grid-area: card2; }
+
+.card3 {
+  grid-area: card3; }
+
+.card4 {
+  grid-area: card4; }
+
+.card5 {
+  grid-area: card5; }
+
+.card6 {
+  grid-area: card6; }
+
+.card7 {
+  grid-area: card7; }
+
+.card8 {
+  grid-area: card8; }
+
+.scale:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 1s ease; }
+
 * {
   margin: 0;
   padding: 0;
