@@ -121,15 +121,25 @@ form {
   width: 100%; }
 
 .card {
-  padding: 10px 10px;
+  padding: 3%;
   margin-bottom: 50px;
   /* border: 1px solid grey;
     border-radius: 20px;*/ }
 
-.cardImg {
-  width: 130%; }
+.buttonCTA {
+  background-color: #c0bbbb;
+  color: #302d2d;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; }
 
-.cardPrice {
+.cartImg {
+  width: 100%; }
+
+.cartPrice {
   display: block;
   font-size: 1000px;
   font-weight: 600;
@@ -291,7 +301,7 @@ h2 {
 .contenedor_carousel {
   grid-area: contenedor_carousel; }
 
-.lili {
+.cardContainer {
   display: flex;
   grid-area: lili;
   justify-content: space-around;
@@ -299,15 +309,25 @@ h2 {
   width: 100%; }
 
 .card {
-  padding: 10px 10px;
+  padding: 3%;
   margin-bottom: 50px;
   /* border: 1px solid grey;
     border-radius: 20px;*/ }
 
-.cardImg {
-  width: 130%; }
+.buttonCTA {
+  background-color: #c0bbbb;
+  color: #302d2d;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; }
 
-.cardPrice {
+.cartImg {
+  width: 100%; }
+
+.cartPrice {
   display: block;
   font-size: 1000px;
   font-weight: 600;
