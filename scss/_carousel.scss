@@ -1,3 +1,11 @@
 .contenedor_carousel {
 grid-area: contenedor_carousel;
 }
+
+.lili {
+    display: flex;
+    grid-area: lili;
+    justify-content: space-around;
+    width: 100%;
+  }
+

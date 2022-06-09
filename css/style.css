@@ -20,6 +20,12 @@ header {
 ul li a:hover {
   color: #caa3ec; }
 
+/*.headerHome {
+  background-image: url(../Imagenes/slider1.png);
+  width: 100%;
+  height: 55vh;
+  grid-area: headerHome;
+}*/
 footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -49,7 +55,7 @@ ul li a:hover {
   display: grid;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 5, 1fr;
-  grid-template-areas: "header header header header" "contenedor_carousel contenedor_carousel contenedor_carousel contenedor_carousel" "destacados destacados destacados destacados" "card1 card2 card3 card4" "pie pie pie pie"; }
+  grid-template-areas: "header header header header" "contenedor_carousel contenedor_carousel contenedor_carousel contenedor_carousel" "destacados destacados destacados destacados" "lili lili lili lili" "pie pie pie pie"; }
 
 /*clase agregada para armado de grid Productos*/
 .contenedor-productos {
@@ -114,51 +120,96 @@ form {
   grid-area: formulario;
   width: 100%; }
 
-.imagen {
-  grid-area: imagen;
-  max-width: 100%;
-  height: auto;
-  padding-top: 3%; }
-
-.card_gen, .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
-  padding: 12%;
-  width: 100%; }
-  .card_gen img, .card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img, .card7 img, .card8 img {
-    width: 100%; }
-
-.card1 {
-  grid-area: card1; }
+.card {
+  width: 25%;
+  padding: 20px 10px;
+  border: 1px solid grey;
+  border-radius: 20px; }
 
 .card2 {
-  grid-area: card2; }
+  width: 25%;
+  padding: 20px 10px;
+  border: 1px solid grey;
+  border-radius: 20px; }
 
-.card3 {
-  grid-area: card3; }
+/*.cardImg {
+    width: 100%;
+}
 
-.card4 {
-  grid-area: card4; }
+.cardPrice {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
-.card5 {
-  grid-area: card5; }
+.buttonCTA {
+    margin: 10px 0;
+    background-color: rgb(216, 77, 77);
+    color: rgb(247, 247, 247);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
-.card6 {
-  grid-area: card6; }
+.buttonCTA:hover {
+    background-color: rgb(184, 64, 64);
+    box-shadow: 1px 1px 10px lightgrey;
+}
+ /* 
+.card_gen {
+    padding: 12%;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .card1 {
+  @extend .card_gen;
+    grid-area: card1; 
+  }
+  .card2 {
+    @extend .card_gen;
+    grid-area: card2;
+  }
+  .card3 {
+    @extend .card_gen;
+    grid-area: card3;
+  }
+  .card4 {
+    @extend .card_gen;
+    grid-area: card4;
+  }
+  .card5 {
+    @extend .card_gen;
+      grid-area: card5; 
+    }
+  .card6 {
+    @extend .card_gen;
+    grid-area: card6;
+    }
+  .card7 {
+    @extend .card_gen;
+    grid-area: card7;
+    }
+  .card8 {
+    @extend .card_gen;
+    grid-area: card8;
+    }
+  .scale:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 1s ease;
+  }
 
-.card7 {
-  grid-area: card7; }
-
-.card8 {
-  grid-area: card8; }
-
-.scale:hover {
-  transform: scale(1.1, 1.1);
-  transition: all 1s ease; }
-
+  */
 @media screen and (max-width: 768px) {
   .contenedor {
     grid-template-columns: repeat 2, 1fr;
     grid-template-rows: 6, 1fr;
-    grid-template-areas: "header header" "contenedor_carousel contenedor_carousel" "destacados destacados" "card1 card2" "card3 card4" "pie pie"; }
+    grid-template-areas: "header header" "contenedor_carousel contenedor_carousel" "destacados destacados" "lili lili" "lili lili" "pie pie"; }
   .contenedor-productos {
     display: grid;
     grid-template-columns: repeat 2, 1fr;
@@ -183,7 +234,7 @@ form {
   .contenedor {
     grid-template-columns: repeat 1fr;
     grid-template-rows: 8, 1fr;
-    grid-template-areas: "header" "contenedor_carousel" "destacados" "card1" "card2" "card3" "card4" "pie"; }
+    grid-template-areas: "header" "contenedor_carousel" "destacados" "lili" "lili" "lili" "lili" "pie"; }
   .contenedor-productos {
     display: grid;
     grid-template-columns: repeat 1fr;
@@ -274,46 +325,97 @@ h2 {
 .contenedor_carousel {
   grid-area: contenedor_carousel; }
 
-.imagen {
-  grid-area: imagen;
-  max-width: 100%;
-  height: auto;
-  padding-top: 3%; }
-
-.card_gen, .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
-  padding: 12%;
+.lili {
+  display: flex;
+  grid-area: lili;
+  justify-content: space-around;
   width: 100%; }
-  .card_gen img, .card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img, .card7 img, .card8 img {
-    width: 100%; }
 
-.card1 {
-  grid-area: card1; }
+.card {
+  width: 25%;
+  padding: 20px 10px;
+  border: 1px solid grey;
+  border-radius: 20px; }
 
 .card2 {
-  grid-area: card2; }
+  width: 25%;
+  padding: 20px 10px;
+  border: 1px solid grey;
+  border-radius: 20px; }
 
-.card3 {
-  grid-area: card3; }
+/*.cardImg {
+    width: 100%;
+}
 
-.card4 {
-  grid-area: card4; }
+.cardPrice {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
-.card5 {
-  grid-area: card5; }
+.buttonCTA {
+    margin: 10px 0;
+    background-color: rgb(216, 77, 77);
+    color: rgb(247, 247, 247);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
-.card6 {
-  grid-area: card6; }
+.buttonCTA:hover {
+    background-color: rgb(184, 64, 64);
+    box-shadow: 1px 1px 10px lightgrey;
+}
+ /* 
+.card_gen {
+    padding: 12%;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .card1 {
+  @extend .card_gen;
+    grid-area: card1; 
+  }
+  .card2 {
+    @extend .card_gen;
+    grid-area: card2;
+  }
+  .card3 {
+    @extend .card_gen;
+    grid-area: card3;
+  }
+  .card4 {
+    @extend .card_gen;
+    grid-area: card4;
+  }
+  .card5 {
+    @extend .card_gen;
+      grid-area: card5; 
+    }
+  .card6 {
+    @extend .card_gen;
+    grid-area: card6;
+    }
+  .card7 {
+    @extend .card_gen;
+    grid-area: card7;
+    }
+  .card8 {
+    @extend .card_gen;
+    grid-area: card8;
+    }
+  .scale:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 1s ease;
+  }
 
-.card7 {
-  grid-area: card7; }
-
-.card8 {
-  grid-area: card8; }
-
-.scale:hover {
-  transform: scale(1.1, 1.1);
-  transition: all 1s ease; }
-
+  */
 * {
   margin: 0;
   padding: 0;
